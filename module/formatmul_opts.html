@@ -1,0 +1,6224 @@
+<!-- -*- mode: jinja2 -*- -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Documentation for ForMatmul">
+    <meta name="author" content="Seyed Ali Ghasemi" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>formatmul_opts &ndash; ForMatmul</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">ForMatmul <small>0.8.0</small></a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../lists/files.html">Source Files</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/programs.html">Programs</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <h1>formatmul_opts
+      <small>Module</small>
+      
+    </h1>
+      <div class="container p-2 mb-4 bg-light border rounded-3">
+    <div class="row align-items-center justify-content-between" id="info-bar">
+      <div class="col">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+            <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
+              <a data-bs-toggle="tooltip"
+                 data-bs-placement="bottom" data-html="true"
+                 title="60.2% of total for modules and submodules.">1002 statements</a>
+            </li>
+
+            <li class="list-inline-item" id="source-file">
+              <i class="fa fa-code"></i>
+              <a href="../src/formatmul_opts.f90"> Source File</a>
+            </li>
+        </ul>
+      </div>
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-end mb-0">
+                <li class="breadcrumb-item"><a href='../sourcefile/formatmul_opts.f90.html'>formatmul_opts.f90</a></li>
+            <li class="breadcrumb-item active" aria-current="page">formatmul_opts</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+        <div id="sidebar">
+      <h3>Contents</h3>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#subs-0"
+         aria-expanded="false" aria-controls="subs-0">
+         <h4 class="card-header bg-primary text-white">Subroutines</h4>
+      </a>
+      <div id="subs-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mat_mat_rel_ab_opt">mat_mat_rel_AB_opt</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mat_mat_rel_atb_opt">mat_mat_rel_ATB_opt</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mat_mat_rel_abt_opt">mat_mat_rel_ABT_opt</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mat_mat_rel_atbt_opt">mat_mat_rel_ATBT_opt</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mat_vec_rel_av_opt">mat_vec_rel_Av_opt</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mat_vec_rel_atv_opt">mat_vec_rel_ATv_opt</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_ab_1">mm_AB_1</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_ab_2">mm_AB_2</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_ab_3">mm_AB_3</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_ab_4">mm_AB_4</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_ab_5">mm_AB_5</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_ab_6">mm_AB_6</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_ab_7">mm_AB_7</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_ab_8">mm_AB_8</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_ab_9">mm_AB_9</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_ab_10">mm_AB_10</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_ab_11">mm_AB_11</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_ab_12">mm_AB_12</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_ab_13">mm_AB_13</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atb_1">mm_ATB_1</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atb_2">mm_ATB_2</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atb_3">mm_ATB_3</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atb_4">mm_ATB_4</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atb_5">mm_ATB_5</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atb_6">mm_ATB_6</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atb_7">mm_ATB_7</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atb_8">mm_ATB_8</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atb_9">mm_ATB_9</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atb_10">mm_ATB_10</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atb_11">mm_ATB_11</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atb_12">mm_ATB_12</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atb_13">mm_ATB_13</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_abt_1">mm_ABT_1</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_abt_2">mm_ABT_2</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_abt_3">mm_ABT_3</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_abt_4">mm_ABT_4</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_abt_5">mm_ABT_5</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_abt_6">mm_ABT_6</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_abt_7">mm_ABT_7</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_abt_8">mm_ABT_8</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_abt_9">mm_ABT_9</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_abt_10">mm_ABT_10</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_abt_11">mm_ABT_11</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_abt_12">mm_ABT_12</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_abt_13">mm_ABT_13</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atbt_1">mm_ATBT_1</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atbt_2">mm_ATBT_2</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atbt_3">mm_ATBT_3</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atbt_4">mm_ATBT_4</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atbt_5">mm_ATBT_5</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atbt_6">mm_ATBT_6</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atbt_7">mm_ATBT_7</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atbt_8">mm_ATBT_8</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atbt_9">mm_ATBT_9</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atbt_10">mm_ATBT_10</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atbt_11">mm_ATBT_11</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atbt_12">mm_ATBT_12</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mm_atbt_13">mm_ATBT_13</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mv_av_1">mv_Av_1</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mv_av_2">mv_Av_2</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mv_av_3">mv_Av_3</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mv_av_4">mv_Av_4</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mv_av_5">mv_Av_5</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mv_av_6">mv_Av_6</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mv_av_7">mv_Av_7</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mv_av_8">mv_Av_8</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mv_atv_1">mv_ATv_1</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mv_atv_2">mv_ATv_2</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mv_atv_3">mv_ATv_3</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mv_atv_4">mv_ATv_4</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mv_atv_5">mv_ATv_5</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mv_atv_6">mv_ATv_6</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mv_atv_7">mv_ATv_7</a>
+            <a class="list-group-item" href="../module/formatmul_opts.html#proc-mv_atv_8">mv_ATv_8</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+  
+  
+  
+  
+
+
+  </div>
+
+    </div>
+
+    <div class="col-md-9" id='text'>
+      <p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<br>          <div class="card mb-4">
+      <h3 class="card-header card-title bg-light">Uses</h3>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <ul class="list-inline">
+                  <li class="list-inline-item">kinds</li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: module~~formatmul_opts~~UsesGraph Pages: 1 -->
+<svg id="moduleformatmul_optsUsesGraph" width="195pt" height="32pt"
+ viewBox="0.00 0.00 195.00 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="module~~formatmul_opts~~UsesGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>module~~formatmul_opts~~UsesGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 191,-28 191,4 -4,4"/>
+<!-- module~formatmul_opts -->
+<g id="module~~formatmul_opts~~UsesGraph_node1" class="node">
+<title>module~formatmul_opts</title>
+<polygon fill="none" stroke="black" points="187,-24 90,-24 90,0 187,0 187,-24"/>
+<text text-anchor="middle" x="138.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">formatmul_opts</text>
+</g>
+<!-- kinds -->
+<g id="module~~formatmul_opts~~UsesGraph_node2" class="node">
+<title>kinds</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,0 54,0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">kinds</text>
+</g>
+<!-- module~formatmul_opts&#45;&gt;kinds -->
+<g id="module~~formatmul_opts~~UsesGraph_edge1" class="edge">
+<title>module~formatmul_opts&#45;&gt;kinds</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M89.79,-12C81.29,-12 72.57,-12 64.45,-12"/>
+<polygon fill="#255000" stroke="#255000" points="64.2,-8.5 54.2,-12 64.2,-15.5 64.2,-8.5"/>
+</g>
+</g>
+</svg>
+</div>          <div>
+            <a type="button" class="graph-help" data-bs-toggle="modal" href="#UsesGraph-help-text">Help</a>
+          </div>
+          <div class="modal fade" id="UsesGraph-help-text" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+<p>Nodes of different colours represent the following: </p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="518pt" height="32pt"
+ viewBox="0.00 0.00 517.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 513.5,-28 513.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node">
+<title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,0 54,0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node">
+<title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="145.5,-24 72.5,-24 72.5,0 145.5,0 145.5,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Subroutine -->
+<g id="node3" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="234,-24 164,-24 164,0 234,0 234,-24"/>
+<text text-anchor="middle" x="199" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node4" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="310,-24 252,-24 252,0 310,0 310,-24"/>
+<text text-anchor="middle" x="281" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="386,-24 328,-24 328,0 386,0 386,-24"/>
+<text text-anchor="middle" x="357" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="509.5,-24 404.5,-24 404.5,0 509.5,0 509.5,-24"/>
+<text text-anchor="middle" x="457" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<p>Solid arrows point from a submodule to the (sub)module which it is
+descended from. Dashed arrows point from a module or program unit to 
+modules which it uses.
+</p>
+ Where possible, edges connecting nodes are
+given different colours to make them easier to distinguish in
+large graphs.</div>
+            </div>
+          </div>
+        </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+          <div class="card">
+      <h3 class="card-header card-title bg-light">Used by</h3>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: module~~formatmul_opts~~UsedByGraph Pages: 1 -->
+<svg id="moduleformatmul_optsUsedByGraph" width="338pt" height="536pt"
+ viewBox="0.00 0.00 338.00 536.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="module~~formatmul_opts~~UsedByGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 532)">
+<title>module~~formatmul_opts~~UsedByGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-532 334,-532 334,4 -4,4"/>
+<!-- module~formatmul_opts -->
+<g id="module~~formatmul_opts~~UsedByGraph_node1" class="node">
+<title>module~formatmul_opts</title>
+<polygon fill="none" stroke="black" points="97,-276 0,-276 0,-252 97,-252 97,-276"/>
+<text text-anchor="middle" x="48.5" y="-261.6" font-family="Helvetica,sans-Serif" font-size="10.50">formatmul_opts</text>
+</g>
+<!-- module~formatmul -->
+<g id="module~~formatmul_opts~~UsedByGraph_node2" class="node">
+<title>module~formatmul</title>
+<g id="a_module~~formatmul_opts~~UsedByGraph_node2"><a xlink:href="../module/formatmul.html" xlink:title="formatmul">
+<polygon fill="#337ab7" stroke="#337ab7" points="202,-276 133,-276 133,-252 202,-252 202,-276"/>
+<text text-anchor="middle" x="167.5" y="-261.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">formatmul</text>
+</a>
+</g>
+</g>
+<!-- module~formatmul&#45;&gt;module~formatmul_opts -->
+<g id="module~~formatmul_opts~~UsedByGraph_edge1" class="edge">
+<title>module~formatmul&#45;&gt;module~formatmul_opts</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M132.97,-264C125.01,-264 116.29,-264 107.59,-264"/>
+<polygon fill="#255000" stroke="#255000" points="107.42,-260.5 97.42,-264 107.42,-267.5 107.42,-260.5"/>
+</g>
+<!-- program~test_matmul10 -->
+<g id="module~~formatmul_opts~~UsedByGraph_node3" class="node">
+<title>program~test_matmul10</title>
+<g id="a_module~~formatmul_opts~~UsedByGraph_node3"><a xlink:href="../program/test_matmul10.html" xlink:title="test_matmul10">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="330,-528 238,-528 238,-504 330,-504 330,-528"/>
+<text text-anchor="middle" x="284" y="-513.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">test_matmul10</text>
+</a>
+</g>
+</g>
+<!-- program~test_matmul10&#45;&gt;module~formatmul -->
+<g id="module~~formatmul_opts~~UsedByGraph_edge2" class="edge">
+<title>program~test_matmul10&#45;&gt;module~formatmul</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M248.85,-503.99C244.81,-501.49 241.05,-498.52 238,-495 184.45,-433.1 172.16,-331.08 169.34,-286.27"/>
+<polygon fill="#255000" stroke="#255000" points="172.83,-285.98 168.81,-276.18 165.84,-286.35 172.83,-285.98"/>
+</g>
+<!-- program~test_matmul11 -->
+<g id="module~~formatmul_opts~~UsedByGraph_node4" class="node">
+<title>program~test_matmul11</title>
+<g id="a_module~~formatmul_opts~~UsedByGraph_node4"><a xlink:href="../program/test_matmul11.html" xlink:title="test_matmul11">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="330,-486 238,-486 238,-462 330,-462 330,-486"/>
+<text text-anchor="middle" x="284" y="-471.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">test_matmul11</text>
+</a>
+</g>
+</g>
+<!-- program~test_matmul11&#45;&gt;module~formatmul -->
+<g id="module~~formatmul_opts~~UsedByGraph_edge3" class="edge">
+<title>program~test_matmul11&#45;&gt;module~formatmul</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M249.05,-461.81C244.97,-459.34 241.15,-456.43 238,-453 193.43,-404.51 176.82,-325.02 171.16,-286.43"/>
+<polygon fill="#255000" stroke="#255000" points="174.59,-285.71 169.78,-276.27 167.65,-286.64 174.59,-285.71"/>
+</g>
+<!-- program~test_matmul12 -->
+<g id="module~~formatmul_opts~~UsedByGraph_node5" class="node">
+<title>program~test_matmul12</title>
+<g id="a_module~~formatmul_opts~~UsedByGraph_node5"><a xlink:href="../program/test_matmul12.html" xlink:title="test_matmul12">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="330,-444 238,-444 238,-420 330,-420 330,-444"/>
+<text text-anchor="middle" x="284" y="-429.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">test_matmul12</text>
+</a>
+</g>
+</g>
+<!-- program~test_matmul12&#45;&gt;module~formatmul -->
+<g id="module~~formatmul_opts~~UsedByGraph_edge4" class="edge">
+<title>program~test_matmul12&#45;&gt;module~formatmul</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M249.78,-419.81C245.5,-417.33 241.42,-414.41 238,-411 202.2,-375.38 182.49,-317.75 173.87,-286.27"/>
+<polygon fill="#255000" stroke="#255000" points="177.18,-285.1 171.28,-276.31 170.41,-286.87 177.18,-285.1"/>
+</g>
+<!-- program~test_matmul13 -->
+<g id="module~~formatmul_opts~~UsedByGraph_node6" class="node">
+<title>program~test_matmul13</title>
+<g id="a_module~~formatmul_opts~~UsedByGraph_node6"><a xlink:href="../program/test_matmul13.html" xlink:title="test_matmul13">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="330,-402 238,-402 238,-378 330,-378 330,-402"/>
+<text text-anchor="middle" x="284" y="-387.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">test_matmul13</text>
+</a>
+</g>
+</g>
+<!-- program~test_matmul13&#45;&gt;module~formatmul -->
+<g id="module~~formatmul_opts~~UsedByGraph_edge5" class="edge">
+<title>program~test_matmul13&#45;&gt;module~formatmul</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M251.15,-377.86C246.47,-375.32 241.92,-372.38 238,-369 210.74,-345.5 189.8,-308.8 178.32,-285.6"/>
+<polygon fill="#255000" stroke="#255000" points="181.33,-283.78 173.86,-276.27 175.02,-286.8 181.33,-283.78"/>
+</g>
+<!-- program~test_matmul14 -->
+<g id="module~~formatmul_opts~~UsedByGraph_node7" class="node">
+<title>program~test_matmul14</title>
+<g id="a_module~~formatmul_opts~~UsedByGraph_node7"><a xlink:href="../program/test_matmul14.html" xlink:title="test_matmul14">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="330,-360 238,-360 238,-336 330,-336 330,-360"/>
+<text text-anchor="middle" x="284" y="-345.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">test_matmul14</text>
+</a>
+</g>
+</g>
+<!-- program~test_matmul14&#45;&gt;module~formatmul -->
+<g id="module~~formatmul_opts~~UsedByGraph_edge6" class="edge">
+<title>program~test_matmul14&#45;&gt;module~formatmul</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M253.74,-335.91C248.35,-333.25 242.88,-330.24 238,-327 219.18,-314.49 200.34,-297.03 187.03,-283.67"/>
+<polygon fill="#255000" stroke="#255000" points="189.37,-281.05 179.88,-276.34 184.36,-285.94 189.37,-281.05"/>
+</g>
+<!-- program~test_matmul15 -->
+<g id="module~~formatmul_opts~~UsedByGraph_node8" class="node">
+<title>program~test_matmul15</title>
+<g id="a_module~~formatmul_opts~~UsedByGraph_node8"><a xlink:href="../program/test_matmul15.html" xlink:title="test_matmul15">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="330,-318 238,-318 238,-294 330,-294 330,-318"/>
+<text text-anchor="middle" x="284" y="-303.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">test_matmul15</text>
+</a>
+</g>
+</g>
+<!-- program~test_matmul15&#45;&gt;module~formatmul -->
+<g id="module~~formatmul_opts~~UsedByGraph_edge7" class="edge">
+<title>program~test_matmul15&#45;&gt;module~formatmul</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M250.19,-293.96C237.97,-289.48 223.93,-284.33 210.97,-279.58"/>
+<polygon fill="#255000" stroke="#255000" points="211.91,-276.2 201.32,-276.04 209.5,-282.77 211.91,-276.2"/>
+</g>
+<!-- program~test_matmul3 -->
+<g id="module~~formatmul_opts~~UsedByGraph_node9" class="node">
+<title>program~test_matmul3</title>
+<g id="a_module~~formatmul_opts~~UsedByGraph_node9"><a xlink:href="../program/test_matmul3.html" xlink:title="test_matmul3">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="326.5,-276 241.5,-276 241.5,-252 326.5,-252 326.5,-276"/>
+<text text-anchor="middle" x="284" y="-261.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">test_matmul3</text>
+</a>
+</g>
+</g>
+<!-- program~test_matmul3&#45;&gt;module~formatmul -->
+<g id="module~~formatmul_opts~~UsedByGraph_edge8" class="edge">
+<title>program~test_matmul3&#45;&gt;module~formatmul</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M241.34,-264C231.85,-264 221.75,-264 212.18,-264"/>
+<polygon fill="#255000" stroke="#255000" points="212.07,-260.5 202.07,-264 212.07,-267.5 212.07,-260.5"/>
+</g>
+<!-- program~test_matmul4 -->
+<g id="module~~formatmul_opts~~UsedByGraph_node10" class="node">
+<title>program~test_matmul4</title>
+<g id="a_module~~formatmul_opts~~UsedByGraph_node10"><a xlink:href="../program/test_matmul4.html" xlink:title="test_matmul4">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="326.5,-234 241.5,-234 241.5,-210 326.5,-210 326.5,-234"/>
+<text text-anchor="middle" x="284" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">test_matmul4</text>
+</a>
+</g>
+</g>
+<!-- program~test_matmul4&#45;&gt;module~formatmul -->
+<g id="module~~formatmul_opts~~UsedByGraph_edge9" class="edge">
+<title>program~test_matmul4&#45;&gt;module~formatmul</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M250.19,-234.04C237.97,-238.52 223.93,-243.67 210.97,-248.42"/>
+<polygon fill="#255000" stroke="#255000" points="209.5,-245.23 201.32,-251.96 211.91,-251.8 209.5,-245.23"/>
+</g>
+<!-- program~test_matmul5 -->
+<g id="module~~formatmul_opts~~UsedByGraph_node11" class="node">
+<title>program~test_matmul5</title>
+<g id="a_module~~formatmul_opts~~UsedByGraph_node11"><a xlink:href="../program/test_matmul5.html" xlink:title="test_matmul5">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="326.5,-192 241.5,-192 241.5,-168 326.5,-168 326.5,-192"/>
+<text text-anchor="middle" x="284" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">test_matmul5</text>
+</a>
+</g>
+</g>
+<!-- program~test_matmul5&#45;&gt;module~formatmul -->
+<g id="module~~formatmul_opts~~UsedByGraph_edge10" class="edge">
+<title>program~test_matmul5&#45;&gt;module~formatmul</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M253.74,-192.09C248.35,-194.75 242.88,-197.76 238,-201 219.18,-213.51 200.34,-230.97 187.03,-244.33"/>
+<polygon fill="#255000" stroke="#255000" points="184.36,-242.06 179.88,-251.66 189.37,-246.95 184.36,-242.06"/>
+</g>
+<!-- program~test_matmul6 -->
+<g id="module~~formatmul_opts~~UsedByGraph_node12" class="node">
+<title>program~test_matmul6</title>
+<g id="a_module~~formatmul_opts~~UsedByGraph_node12"><a xlink:href="../program/test_matmul6.html" xlink:title="test_matmul6">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="326.5,-150 241.5,-150 241.5,-126 326.5,-126 326.5,-150"/>
+<text text-anchor="middle" x="284" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">test_matmul6</text>
+</a>
+</g>
+</g>
+<!-- program~test_matmul6&#45;&gt;module~formatmul -->
+<g id="module~~formatmul_opts~~UsedByGraph_edge11" class="edge">
+<title>program~test_matmul6&#45;&gt;module~formatmul</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M251.15,-150.14C246.47,-152.68 241.92,-155.62 238,-159 210.74,-182.5 189.8,-219.2 178.32,-242.4"/>
+<polygon fill="#255000" stroke="#255000" points="175.02,-241.2 173.86,-251.73 181.33,-244.22 175.02,-241.2"/>
+</g>
+<!-- program~test_matmul7 -->
+<g id="module~~formatmul_opts~~UsedByGraph_node13" class="node">
+<title>program~test_matmul7</title>
+<g id="a_module~~formatmul_opts~~UsedByGraph_node13"><a xlink:href="../program/test_matmul7.html" xlink:title="test_matmul7">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="326.5,-108 241.5,-108 241.5,-84 326.5,-84 326.5,-108"/>
+<text text-anchor="middle" x="284" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">test_matmul7</text>
+</a>
+</g>
+</g>
+<!-- program~test_matmul7&#45;&gt;module~formatmul -->
+<g id="module~~formatmul_opts~~UsedByGraph_edge12" class="edge">
+<title>program~test_matmul7&#45;&gt;module~formatmul</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M249.78,-108.19C245.5,-110.67 241.42,-113.59 238,-117 202.2,-152.62 182.49,-210.25 173.87,-241.73"/>
+<polygon fill="#255000" stroke="#255000" points="170.41,-241.13 171.28,-251.69 177.18,-242.9 170.41,-241.13"/>
+</g>
+<!-- program~test_matmul8 -->
+<g id="module~~formatmul_opts~~UsedByGraph_node14" class="node">
+<title>program~test_matmul8</title>
+<g id="a_module~~formatmul_opts~~UsedByGraph_node14"><a xlink:href="../program/test_matmul8.html" xlink:title="test_matmul8">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="326.5,-66 241.5,-66 241.5,-42 326.5,-42 326.5,-66"/>
+<text text-anchor="middle" x="284" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">test_matmul8</text>
+</a>
+</g>
+</g>
+<!-- program~test_matmul8&#45;&gt;module~formatmul -->
+<g id="module~~formatmul_opts~~UsedByGraph_edge13" class="edge">
+<title>program~test_matmul8&#45;&gt;module~formatmul</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M249.05,-66.19C244.97,-68.66 241.15,-71.57 238,-75 193.43,-123.49 176.82,-202.98 171.16,-241.57"/>
+<polygon fill="#255000" stroke="#255000" points="167.65,-241.36 169.78,-251.73 174.59,-242.29 167.65,-241.36"/>
+</g>
+<!-- program~test_matmul9 -->
+<g id="module~~formatmul_opts~~UsedByGraph_node15" class="node">
+<title>program~test_matmul9</title>
+<g id="a_module~~formatmul_opts~~UsedByGraph_node15"><a xlink:href="../program/test_matmul9.html" xlink:title="test_matmul9">
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="326.5,-24 241.5,-24 241.5,0 326.5,0 326.5,-24"/>
+<text text-anchor="middle" x="284" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">test_matmul9</text>
+</a>
+</g>
+</g>
+<!-- program~test_matmul9&#45;&gt;module~formatmul -->
+<g id="module~~formatmul_opts~~UsedByGraph_edge14" class="edge">
+<title>program~test_matmul9&#45;&gt;module~formatmul</title>
+<path fill="none" stroke="#255000" stroke-dasharray="5,2" d="M248.85,-24.01C244.81,-26.51 241.05,-29.48 238,-33 184.45,-94.9 172.16,-196.92 169.34,-241.73"/>
+<polygon fill="#255000" stroke="#255000" points="165.84,-241.65 168.81,-251.82 172.83,-242.02 165.84,-241.65"/>
+</g>
+</g>
+</svg>
+</div>          <div>
+            <a type="button" class="graph-help" data-bs-toggle="modal" href="#UsedByGraph-help-text">Help</a>
+          </div>
+          <div class="modal fade" id="UsedByGraph-help-text" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+<p>Nodes of different colours represent the following: </p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="518pt" height="32pt"
+ viewBox="0.00 0.00 517.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 513.5,-28 513.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node">
+<title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,0 54,0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node">
+<title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="145.5,-24 72.5,-24 72.5,0 145.5,0 145.5,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Subroutine -->
+<g id="node3" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="234,-24 164,-24 164,0 234,0 234,-24"/>
+<text text-anchor="middle" x="199" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node4" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="310,-24 252,-24 252,0 310,0 310,-24"/>
+<text text-anchor="middle" x="281" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="386,-24 328,-24 328,0 386,0 386,-24"/>
+<text text-anchor="middle" x="357" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="509.5,-24 404.5,-24 404.5,0 509.5,0 509.5,-24"/>
+<text text-anchor="middle" x="457" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<p>Solid arrows point from a submodule to the (sub)module which it is
+descended from. Dashed arrows point from a module or program unit to 
+modules which it uses.
+</p>
+ Where possible, edges connecting nodes are
+given different colours to make them easier to distinguish in
+large graphs.</div>
+            </div>
+          </div>
+        </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+      <br>
+
+
+
+
+
+
+
+
+        <section>
+          <h2>Subroutines</h2>
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mat_mat_rel_ab_opt"></span> <h3>public pure subroutine <a href='../proc/mat_mat_rel_ab_opt.html'>mat_mat_rel_AB_opt</a>(A, B, C, option)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~22"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~12"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~12"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-option~13"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>option</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mat_mat_rel_atb_opt"></span> <h3>public pure subroutine <a href='../proc/mat_mat_rel_atb_opt.html'>mat_mat_rel_ATB_opt</a>(A, B, C, option)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~23"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~13"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~13"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-option~14"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>option</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mat_mat_rel_abt_opt"></span> <h3>public pure subroutine <a href='../proc/mat_mat_rel_abt_opt.html'>mat_mat_rel_ABT_opt</a>(A, B, C, option)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~24"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~14"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~14"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-option~15"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>option</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mat_mat_rel_atbt_opt"></span> <h3>public pure subroutine <a href='../proc/mat_mat_rel_atbt_opt.html'>mat_mat_rel_ATBT_opt</a>(A, B, C, option)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~25"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~15"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~15"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-option~16"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>option</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mat_vec_rel_av_opt"></span> <h3>public pure subroutine <a href='../proc/mat_vec_rel_av_opt.html'>mat_vec_rel_Av_opt</a>(A, v, w, option)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~26"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~11"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~11"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-option~17"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>option</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mat_vec_rel_atv_opt"></span> <h3>public pure subroutine <a href='../proc/mat_vec_rel_atv_opt.html'>mat_vec_rel_ATv_opt</a>(A, v, w, option)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~27"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~12"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~12"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-option~18"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>option</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_ab_1"></span> <h3>private pure subroutine <a href='../proc/mm_ab_1.html'>mm_AB_1</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~28"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~16"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~16"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_ab_2"></span> <h3>private pure subroutine <a href='../proc/mm_ab_2.html'>mm_AB_2</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~29"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~17"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~17"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_ab_3"></span> <h3>private pure subroutine <a href='../proc/mm_ab_3.html'>mm_AB_3</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~30"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~18"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~18"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_ab_4"></span> <h3>private pure subroutine <a href='../proc/mm_ab_4.html'>mm_AB_4</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~31"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~19"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~19"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_ab_5"></span> <h3>private pure subroutine <a href='../proc/mm_ab_5.html'>mm_AB_5</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~32"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~20"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~20"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_ab_6"></span> <h3>private pure subroutine <a href='../proc/mm_ab_6.html'>mm_AB_6</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~33"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~21"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~21"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_ab_7"></span> <h3>private pure subroutine <a href='../proc/mm_ab_7.html'>mm_AB_7</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~34"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~22"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~22"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_ab_8"></span> <h3>private pure subroutine <a href='../proc/mm_ab_8.html'>mm_AB_8</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~35"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~23"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~23"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_ab_9"></span> <h3>private pure subroutine <a href='../proc/mm_ab_9.html'>mm_AB_9</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~36"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~24"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~24"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_ab_10"></span> <h3>private pure subroutine <a href='../proc/mm_ab_10.html'>mm_AB_10</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~37"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~25"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~25"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_ab_11"></span> <h3>private pure subroutine <a href='../proc/mm_ab_11.html'>mm_AB_11</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~38"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~26"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~26"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_ab_12"></span> <h3>private pure subroutine <a href='../proc/mm_ab_12.html'>mm_AB_12</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~39"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~27"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~27"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_ab_13"></span> <h3>private pure subroutine <a href='../proc/mm_ab_13.html'>mm_AB_13</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~40"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~28"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~28"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atb_1"></span> <h3>private pure subroutine <a href='../proc/mm_atb_1.html'>mm_ATB_1</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~41"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~29"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~29"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atb_2"></span> <h3>private pure subroutine <a href='../proc/mm_atb_2.html'>mm_ATB_2</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~42"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~30"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~30"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atb_3"></span> <h3>private pure subroutine <a href='../proc/mm_atb_3.html'>mm_ATB_3</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~43"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~31"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~31"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atb_4"></span> <h3>private pure subroutine <a href='../proc/mm_atb_4.html'>mm_ATB_4</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~44"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~32"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~32"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atb_5"></span> <h3>private pure subroutine <a href='../proc/mm_atb_5.html'>mm_ATB_5</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~45"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~33"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~33"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atb_6"></span> <h3>private pure subroutine <a href='../proc/mm_atb_6.html'>mm_ATB_6</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~46"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~34"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~34"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atb_7"></span> <h3>private pure subroutine <a href='../proc/mm_atb_7.html'>mm_ATB_7</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~47"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~35"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~35"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atb_8"></span> <h3>private pure subroutine <a href='../proc/mm_atb_8.html'>mm_ATB_8</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~48"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~36"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~36"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atb_9"></span> <h3>private pure subroutine <a href='../proc/mm_atb_9.html'>mm_ATB_9</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~49"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~37"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~37"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atb_10"></span> <h3>private pure subroutine <a href='../proc/mm_atb_10.html'>mm_ATB_10</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~50"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~38"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~38"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atb_11"></span> <h3>private pure subroutine <a href='../proc/mm_atb_11.html'>mm_ATB_11</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~51"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~39"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~39"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atb_12"></span> <h3>private pure subroutine <a href='../proc/mm_atb_12.html'>mm_ATB_12</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~52"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~40"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~40"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atb_13"></span> <h3>private pure subroutine <a href='../proc/mm_atb_13.html'>mm_ATB_13</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~53"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~41"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~41"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_abt_1"></span> <h3>private pure subroutine <a href='../proc/mm_abt_1.html'>mm_ABT_1</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~54"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~42"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~42"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_abt_2"></span> <h3>private pure subroutine <a href='../proc/mm_abt_2.html'>mm_ABT_2</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~55"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~43"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~43"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_abt_3"></span> <h3>private pure subroutine <a href='../proc/mm_abt_3.html'>mm_ABT_3</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~56"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~44"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~44"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_abt_4"></span> <h3>private pure subroutine <a href='../proc/mm_abt_4.html'>mm_ABT_4</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~57"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~45"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~45"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_abt_5"></span> <h3>private pure subroutine <a href='../proc/mm_abt_5.html'>mm_ABT_5</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~58"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~46"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~46"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_abt_6"></span> <h3>private pure subroutine <a href='../proc/mm_abt_6.html'>mm_ABT_6</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~59"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~47"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~47"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_abt_7"></span> <h3>private pure subroutine <a href='../proc/mm_abt_7.html'>mm_ABT_7</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~60"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~48"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~48"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_abt_8"></span> <h3>private pure subroutine <a href='../proc/mm_abt_8.html'>mm_ABT_8</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~61"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~49"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~49"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_abt_9"></span> <h3>private pure subroutine <a href='../proc/mm_abt_9.html'>mm_ABT_9</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~62"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~50"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~50"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_abt_10"></span> <h3>private pure subroutine <a href='../proc/mm_abt_10.html'>mm_ABT_10</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~63"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~51"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~51"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_abt_11"></span> <h3>private pure subroutine <a href='../proc/mm_abt_11.html'>mm_ABT_11</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~64"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~52"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~52"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_abt_12"></span> <h3>private pure subroutine <a href='../proc/mm_abt_12.html'>mm_ABT_12</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~65"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~53"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~53"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_abt_13"></span> <h3>private pure subroutine <a href='../proc/mm_abt_13.html'>mm_ABT_13</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~66"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~54"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~54"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atbt_1"></span> <h3>private pure subroutine <a href='../proc/mm_atbt_1.html'>mm_ATBT_1</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~67"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~55"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~55"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atbt_2"></span> <h3>private pure subroutine <a href='../proc/mm_atbt_2.html'>mm_ATBT_2</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~68"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~56"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~56"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atbt_3"></span> <h3>private pure subroutine <a href='../proc/mm_atbt_3.html'>mm_ATBT_3</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~69"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~57"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~57"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atbt_4"></span> <h3>private pure subroutine <a href='../proc/mm_atbt_4.html'>mm_ATBT_4</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~70"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~58"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~58"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atbt_5"></span> <h3>private pure subroutine <a href='../proc/mm_atbt_5.html'>mm_ATBT_5</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~71"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~59"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~59"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atbt_6"></span> <h3>private pure subroutine <a href='../proc/mm_atbt_6.html'>mm_ATBT_6</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~72"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~60"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~60"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atbt_7"></span> <h3>private pure subroutine <a href='../proc/mm_atbt_7.html'>mm_ATBT_7</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~73"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~61"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~61"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atbt_8"></span> <h3>private pure subroutine <a href='../proc/mm_atbt_8.html'>mm_ATBT_8</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~74"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~62"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~62"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atbt_9"></span> <h3>private pure subroutine <a href='../proc/mm_atbt_9.html'>mm_ATBT_9</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~75"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~63"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~63"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atbt_10"></span> <h3>private pure subroutine <a href='../proc/mm_atbt_10.html'>mm_ATBT_10</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~76"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~64"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~64"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atbt_11"></span> <h3>private pure subroutine <a href='../proc/mm_atbt_11.html'>mm_ATBT_11</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~77"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~65"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~65"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atbt_12"></span> <h3>private pure subroutine <a href='../proc/mm_atbt_12.html'>mm_ATBT_12</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~78"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~66"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~66"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mm_atbt_13"></span> <h3>private pure subroutine <a href='../proc/mm_atbt_13.html'>mm_ATBT_13</a>(A, B, C)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~79"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-b~67"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>B</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-c~67"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>C</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mv_av_1"></span> <h3>private pure subroutine <a href='../proc/mv_av_1.html'>mv_Av_1</a>(A, v, w)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~80"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~13"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~13"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mv_av_2"></span> <h3>private pure subroutine <a href='../proc/mv_av_2.html'>mv_Av_2</a>(A, v, w)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~81"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~14"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~14"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mv_av_3"></span> <h3>private pure subroutine <a href='../proc/mv_av_3.html'>mv_Av_3</a>(A, v, w)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~82"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~15"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~15"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mv_av_4"></span> <h3>private pure subroutine <a href='../proc/mv_av_4.html'>mv_Av_4</a>(A, v, w)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~83"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~16"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~16"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mv_av_5"></span> <h3>private pure subroutine <a href='../proc/mv_av_5.html'>mv_Av_5</a>(A, v, w)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~84"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~17"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~17"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mv_av_6"></span> <h3>private pure subroutine <a href='../proc/mv_av_6.html'>mv_Av_6</a>(A, v, w)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~85"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~18"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~18"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mv_av_7"></span> <h3>private pure subroutine <a href='../proc/mv_av_7.html'>mv_Av_7</a>(A, v, w)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~86"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~19"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~19"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mv_av_8"></span> <h3>private pure subroutine <a href='../proc/mv_av_8.html'>mv_Av_8</a>(A, v, w)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~87"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~20"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~20"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mv_atv_1"></span> <h3>private pure subroutine <a href='../proc/mv_atv_1.html'>mv_ATv_1</a>(A, v, w)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~88"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~21"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~21"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mv_atv_2"></span> <h3>private pure subroutine <a href='../proc/mv_atv_2.html'>mv_ATv_2</a>(A, v, w)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~89"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~22"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~22"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mv_atv_3"></span> <h3>private pure subroutine <a href='../proc/mv_atv_3.html'>mv_ATv_3</a>(A, v, w)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~90"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~23"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~23"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mv_atv_4"></span> <h3>private pure subroutine <a href='../proc/mv_atv_4.html'>mv_ATv_4</a>(A, v, w)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~91"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~24"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~24"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mv_atv_5"></span> <h3>private pure subroutine <a href='../proc/mv_atv_5.html'>mv_ATv_5</a>(A, v, w)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~92"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~25"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~25"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mv_atv_6"></span> <h3>private pure subroutine <a href='../proc/mv_atv_6.html'>mv_ATv_6</a>(A, v, w)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~93"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~26"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~26"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mv_atv_7"></span> <h3>private pure subroutine <a href='../proc/mv_atv_7.html'>mv_ATv_7</a>(A, v, w)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~94"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~27"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~27"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-mv_atv_8"></span> <h3>private pure subroutine <a href='../proc/mv_atv_8.html'>mv_ATv_8</a>(A, v, w)  
+</h3></div>
+    <div class="card-body">
+              <dl class="dl-horizontal">
+        <dt>Author</dt><dd>Seyed Ali Ghasemi</dd>
+    </dl>
+
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-a~95"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>A</strong>(:,:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-v~28"></span>
+              real(kind=rk),
+            </td>
+<td>intent(in),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>v</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-w~28"></span>
+              real(kind=rk),
+            </td>
+<td>intent(inout),</td>
+              <td></td>            <td>
+              contiguous
+            </td>
+            <td>::</td>
+            <td><strong>w</strong>(:)</td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+        </section>
+        <br>
+
+
+
+    </div>
+  </div>
+
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col"><p>ForMatmul was developed by Seyed Ali Ghasemi<br>&copy; 2023 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+ on 2024-03-22T12:08:01.713937             </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+
+    <!-- MathJax JavaScript
+             ================================================== -->
+             <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+          <script src="../tipuesearch/tipuesearch_content.js"></script>
+          <script src="../tipuesearch/tipuesearch_set.js"></script>
+          <script src="../tipuesearch/tipuesearch.js"></script>
+
+  </body>
+</html>
