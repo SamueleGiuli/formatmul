@@ -1,8 +1,12 @@
 name: test
 on: workflow_dispatch
 
+defaults:
+  run:
+    shell: bash -l {0}
+
 jobs:
-  Build:
+  build:
     runs-on: ${{ matrix.os }}
     permissions:
       contents: write
