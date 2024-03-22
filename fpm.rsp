@@ -2,25 +2,25 @@
 options test
 options --compiler ifort
 options --profile release
-options --flag "-O3 -mtune=native -xHost -qmkl -qopenmp -ipo"
+options --flag "-O3 -mtune=native -xHost -ipo"
 
 @ifort-test-coarray
 options test
 options --compiler ifort
 options --profile release
-options --flag "-O3 -mtune=native -xHost -qmkl -qopenmp -DUSE_DO_CONCURRENT -ipo -coarray -coarray-num-images=4 -DUSE_COARRAY"
+options --flag "-O3 -mtune=native -xHost -DUSE_DO_CONCURRENT -ipo -coarray -coarray-num-images=4 -DUSE_COARRAY"
 
 @ifx-test
 options test
 options --compiler ifx
 options --profile release
-options --flag "-O3 -mtune=native -xHost -qmkl -qopenmp -DUSE_DO_CONCURRENT"
+options --flag "-O3 -mtune=native -xHost -DUSE_DO_CONCURRENT"
 
 @ifx-test-coarray
 options test
 options --compiler ifx
 options --profile release
-options --flag "-O3 -mtune=native -xHost -qmkl -qopenmp -DUSE_DO_CONCURRENT -coarray -coarray-num-images=4 -DUSE_COARRAY"
+options --flag "-O3 -mtune=native -xHost -DUSE_DO_CONCURRENT -coarray -coarray-num-images=4 -DUSE_COARRAY"
 
 @nvfortran-test
 options test
@@ -32,4 +32,4 @@ options --flag "-O3 -fast -march=native -mtune=native -stdpar=gpu,multicore -lbl
 options test
 options --compiler gfortran
 options --profile release
-options --flag "-O3 -march=native -lblas -fopenmp -DUSE_DO_CONCURRENT -flto"
+options --flag "-O3 -march=native -DUSE_DO_CONCURRENT -flto"

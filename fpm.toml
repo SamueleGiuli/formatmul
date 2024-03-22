@@ -10,11 +10,13 @@ license    = "LICENSE"
 macros = []
 
 [dependencies]
+openmp      = "*"
 kinds       = {git="https://github.com/gha3mi/kinds.git"}
 fortime     = {git="https://github.com/gha3mi/fortime.git"}
 forunittest = {git="https://github.com/gha3mi/forunittest.git"}
 
 [build]
+link = ["blas", "lapack"]
 auto-executables = false
 auto-tests       = false
 auto-examples    = false
